@@ -1,7 +1,6 @@
 let myLibrary = [];
-const domParser = new DOMParser()
+const bookForm = document.getElementById('bookForm')
 const bookRow = document.getElementById('bookRow')
-
 
 function Book(title, author, read, pages) {
   this.title = title
@@ -16,34 +15,32 @@ myLibrary.push(
   new Book('Hard kill', "lotert runway", false, 235)
 )
 
-myLibrary.forEach((book)=> {
+myLibrary.forEach((book) => {
   bookRow.appendChild(bookCard(book))
 })
 
 function bookCard(book) {
+  const domParser = new DOMParser()
   const card = `
-
-  <div class="col-6">
-  <div class="card h-100">
-    <div class="card-body">
-      <h4 class="mb-0">${book.title}</h4>
-      <h6>${book.author}</h6>
-      <p>Pages: ${book.pages}</p>
-      <p>Read: ${book.read}   
-      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
-   </p>
+    <div class="col-6">
+      <div class="card border-primary shadow h-100">
+        <div class="card-body">
+          <h6 class="card-title mb-0">${book.title}</h6>
+          <p class="card-subtitle mb-3 text-muted">${book.author}</p>
+          <p class="mb-0"><span class="text-muted">Pages:</span> ${book.pages}</p>
+          <div class="mb-0 d-flex"><span class="text-muted">Read:</span> &nbsp; ${book.read.toString()}
+            <div class="form-check form-switch d-inline-flex ms-3">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-
   `
   return domParser.parseFromString(card, 'text/html').body.children[0]
 }
 
-const bookForm = document.getElementById('bookForm')
-bookForm.addEventListener("submit", addBookToLibrary)
 
 function addBookToLibrary(event) {
   event.preventDefault();
@@ -55,7 +52,9 @@ function addBookToLibrary(event) {
     read = Boolean(formData.get('read')),
     pages = formData.get('pages')
   )
-   
+
   bookRow.appendChild(bookCard(newBook))
   bookForm.reset()
 }
+
+bookForm.addEventListener('submit', addBookToLibrary)
