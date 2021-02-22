@@ -12,48 +12,48 @@
 </head>
 
 <body>
-  <header class="container">
+  <header>
     <nav class="navbar navbar-light bg-light">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
-        </div>
-      </nav>
+      <div class="container">
+        <span class="navbar-brand fw-bold mb-0 h1">Navbar</span>
+      </div>
+    </nav>
   </header>
 
-
-
-  <div class="container">
-    <div class="row">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
       <div class="col-sm-10 col-md-7">
-        <h1>Books</h1>
+        <h4 class="text-primary fw-bold">Books</h4>
 
-        <div class="row g-2" id="bookRow"></div>
+        <div class="row g-3" id="bookRow"></div>
       </div>
 
-      <div class="col-sm-10 col-md-5 col-lg-4">
-        <form id="bookForm">
-          <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-control" id="title" name="title" required>
-          </div>
+      <div class="col-sm-10 col-md-5 col-lg-4 col-xl-3">
+        <form class="card border-0 shadow alert-primary" id="bookForm">
+          <div class="card-body py-5">
+            <h6 class="fw-bold">Add new book</h6>
+            <div class="mb-3">
+              <label for="title" class="form-label mb-0">Title</label>
+              <input type="text" class="form-control border-primary" id="title" name="title" required>
+            </div>
 
-          <div class="mb-3">
-            <label for="author" class="form-label">Author</label>
-            <input type="text" class="form-control" id="author" name="author" required>
-          </div>
+            <div class="mb-3">
+              <label for="author" class="form-label mb-0">Author</label>
+              <input type="text" class="form-control border-primary" id="author" name="author" required>
+            </div>
 
-          <div class="mb-3">
-            <label for="pages" class="form-label">Pages</label>
-            <input type="number" class="form-control" id="pages" name="pages" required>
-          </div>
+            <div class="mb-3">
+              <label for="pages" class="form-label mb-0">Pages</label>
+              <input type="number" class="form-control border-primary" id="pages" name="pages" required>
+            </div>
 
-          <div class="mb-3">
+            <div class="mb-3">
               <input class="form-check-input" type="checkbox" id="read" checked name="read">
               <label class="form-check-label" for="read">Read</label>
-          </div>
+            </div>
 
-          <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary px-4">Submit</button>
+          </div>
         </form>
       </div>
     </div>
