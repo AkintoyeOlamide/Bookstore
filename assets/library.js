@@ -22,8 +22,9 @@ myLibrary.forEach((book) => {
 function bookCard(book) {
   const domParser = new DOMParser()
   const card = `
-    <div class="col-6">
-      <div class="card border-primary shadow h-100">
+    <div class="col-6 ">
+      <div class="card border-primary shadow h-100 position-relative">
+      <button type="button" class="btn btn-danger position-absolute top-5 end-0" onclick="removeBookFromLibrary(event)">X</button>
         <div class="card-body">
           <h6 class="card-title mb-0">${book.title}</h6>
           <p class="card-subtitle mb-3 text-muted">${book.author}</p>
@@ -42,6 +43,7 @@ function bookCard(book) {
 }
 
 
+
 function addBookToLibrary(event) {
   event.preventDefault();
 
@@ -55,6 +57,11 @@ function addBookToLibrary(event) {
 
   bookRow.appendChild(bookCard(newBook))
   bookForm.reset()
+}
+
+function removeBookFromLibrary(event) {
+  event.target.parentElement.parentElement.remove();
+  console.log(event.target)
 }
 
 bookForm.addEventListener('submit', addBookToLibrary)
