@@ -2,12 +2,11 @@
 
 # Book-Store
 
-This project is a demo website for a libray, developed using Javascript. 
+This project is a demo website for a libray, developed using Javascript.
 
 ## `Build-With:`
 - Hmtl/css
 - javascript
-- VScode
 
 ## `Live Demo:`
 
@@ -46,7 +45,3 @@ To get this project up and running locally, "npm install" is needed to be run in
 ## `Show your support:`
 
 Give ⭐ Star me on GitHub — it helps!
-
-## 📝 `License`
-
-This project is [MIT](lic.url) licensed.
