@@ -1,41 +1,34 @@
-# Bookstore
-
 # Book-Store
 
-This project is a demo website for a libray, developed using Javascript.
+This project is a demo of a book library that offers a book management system. The system allows users the privileges to add or delete new books from the library, and to bookmark books they've read.
 
 ## `Build-With:`
-- Hmtl/css
-- javascript
+- HTML/CSS
+- Javascript
 
 ## `Live Demo:`
 
 [Book-Store](https://rawcdn.githack.com/AkintoyeOlamide/Bookstore/1600ea41074768810e1f936ded679ae44e5c5a99/index.html)
 
-## `Screen-shots:`
+## `Screenshot:`
 
 <img src="assets/screenshot.png">
 
 # Getting Started:
 
-### `Prerequisites`
-
-To get this project up and running locally, "npm install" is needed to be run in order to include all dependencies used for this project.
-
 **To get this project set up on your local machine, follow these simple steps:**
 
-1. Open Terminal.
-2. Navigate to your desired location to download the contents of this repository.
-3. Copy and paste the following code into the Terminal: git clone `https://github.com/AkintoyeOlamide/Bookstore`.
-4. Into the Terminal: run `cd Bookstore`.
-7. To see the website in the browser, open the index.html page and right click then clive on live server.
+1. Open Terminal and run `git@github.com:AkintoyeOlamide/Bookstore.git`.
+2. Open the repo you just cloned (which will be `Bookstore`).
+3. Find and open the `index.html` file in your web browser.
 
 
 ## `Author Details::`
 
-👤 **Silas kalu**
+👤 **Silas Kalu**
 
 - Github: [@cyonii](https://github.com/cyonii)
+- Twitter: [@cy_kalu](https://twitter.com/cy_kalu)
 
 👤 **Akintoye Oluwatobiloba**
 
@@ -44,4 +37,4 @@ To get this project up and running locally, "npm install" is needed to be run in
 
 ## `Show your support:`
 
-Give ⭐ Star me on GitHub — it helps!
+Give this project a ⭐ Star on GitHub — it helps!
