@@ -11,7 +11,7 @@ This project is a demo website for a libray, developed using Javascript.
 
 ## `Live Demo:`
 
-[Book-Store](https://rawcdn.githack.com/AkintoyeOlamide/Bookstore/1600ea41074768810e1f936ded679ae44e5c5a99/index.html/)
+[Book-Store](https://rawcdn.githack.com/AkintoyeOlamide/Bookstore/1600ea41074768810e1f936ded679ae44e5c5a99/index.html)
 
 ## `Screen-shots:`
 
